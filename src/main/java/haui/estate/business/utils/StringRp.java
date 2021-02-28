@@ -26,4 +26,9 @@ public interface StringRp {
 
     String USER_IS_EXISTS = "user id exists";
     String WARD_IS_NOT_EXISTS = " ward is not exists";
+
+    // locations
+
+    String PROVINCE_IS_FAKE = "province is fake";
+    String DISTRICT_IS_FAKE = "distric is fake";
 }
