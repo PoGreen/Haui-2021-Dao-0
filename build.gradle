@@ -23,6 +23,9 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation'com.fasterxml.uuid:java-uuid-generator:4.0.1'
     implementation 'org.springframework.security:spring-security-crypto'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.3.9.RELEASE'
+
 }
 
 test {
