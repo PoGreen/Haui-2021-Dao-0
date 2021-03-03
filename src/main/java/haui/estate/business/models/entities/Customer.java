@@ -25,9 +25,9 @@ public class Customer extends BaseEntity{
     @Column(name = "address")
     private String address;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "role_id", referencedColumnName = "id")
-    public Role role;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "role_id")
+    private Role role;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ward_id")
