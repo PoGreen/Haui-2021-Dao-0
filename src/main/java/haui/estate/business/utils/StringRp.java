@@ -37,4 +37,7 @@ public interface StringRp {
     String USERNAME_NOT_VALID = "username is not valid";
     String EMAIL_NOT_VALID = "email is not valid";
     String PASSWORD_NOT_VALID = "password is not valid";
+
+    String PROVINCE_IS_FAKE = "province is fake";
+    String DISTRICT_IS_FAKE = "distric is fake";
 }

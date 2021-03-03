@@ -10,5 +10,4 @@ public class Global {
     public static final Integer WAIT = 2;
     public static final Integer DELETE = 0;
 
-
 }
