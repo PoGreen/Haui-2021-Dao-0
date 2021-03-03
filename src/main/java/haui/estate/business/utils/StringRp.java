@@ -28,6 +28,15 @@ public interface StringRp {
     String WARD_IS_NOT_EXISTS = " ward is not exists";
 
     // locations
+    String PROVINCE_IS_FAKE = "province is fake";
+    String DISTRICT_IS_FAKE = "district is fake";
+    String WARD_IS_FAKE = "ward is fake";
+    // account
+    String ACCOUNT_IS_EXIST = "account is exists";
+    String PHONE_NOT_VALID = "phone is not valid";
+    String USERNAME_NOT_VALID = "username is not valid";
+    String EMAIL_NOT_VALID = "email is not valid";
+    String PASSWORD_NOT_VALID = "password is not valid";
 
     String PROVINCE_IS_FAKE = "province is fake";
     String DISTRICT_IS_FAKE = "distric is fake";

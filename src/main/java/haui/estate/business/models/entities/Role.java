@@ -1,7 +1,9 @@
 package haui.estate.business.models.entities;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity(name = "roles")
@@ -18,8 +20,8 @@ public class Role extends BaseEntity {
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Admin> admins = new HashSet<>();
 
-    @OneToOne(mappedBy = "role")
-    private Customer customer;
+    @OneToMany(mappedBy = "role")
+    private List<Customer> customer = new ArrayList<>();
 
     public String getRoleName() {
         return roleName;
@@ -45,11 +47,11 @@ public class Role extends BaseEntity {
         this.admins = admins;
     }
 
-    public Customer getCustomer() {
-        return customer;
+    public void setCustomer(List<Customer> customer) {
+        this.customer = customer;
     }
 
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
+    public List<Customer> getCustomer() {
+        return customer;
     }
 }

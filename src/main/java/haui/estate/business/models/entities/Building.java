@@ -48,6 +48,9 @@ public class Building extends BaseEntity{
     @Column(name = "electricity_price")
     private int electricityPrice;
 
+    @Column(name = "frequence")
+    private int frequence;
+
     @Column(name = "water_price")
     private int waterPrice;
 
@@ -261,5 +264,13 @@ public class Building extends BaseEntity{
 
     public void setImages(List<Image> images) {
         this.images = images;
+    }
+
+    public int getFrequence() {
+        return frequence;
+    }
+
+    public void setFrequence(int frequence) {
+        this.frequence = frequence;
     }
 }

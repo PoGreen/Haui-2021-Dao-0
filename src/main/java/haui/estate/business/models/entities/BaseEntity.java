@@ -29,13 +29,14 @@ public class BaseEntity {
     private String modifiedBy;
 
     @Column
-    private int status = 1;
+    private int status;
 
     @PrePersist()
     public void onCreate() {
         id = Util.generateUUID();
         createdAt = ZonedDateTime.now();
         updatedAt = createdAt;
+        status = 1;
     }
 
     @PreUpdate
