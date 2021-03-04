@@ -69,4 +69,14 @@ public class LocationService implements ILocationService {
         return Response.ok(result);
     }
 
+    @Override
+    public String getLocationByWard(int wardId) {
+        Ward ward = wardRepository.findById(wardId).orElse(null);
+        if (!Objects.isNull(ward)) {
+            District district = ward.getDistrict();
+            Province province = district.getProvince();
+            return province.getName() + " - " + district.getName() + " - " + ward.getName();
+        }
+        return "";
+    }
 }
