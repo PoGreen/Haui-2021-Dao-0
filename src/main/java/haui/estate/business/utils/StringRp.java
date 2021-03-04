@@ -27,6 +27,8 @@ public interface StringRp {
     String USER_IS_EXISTS = "user id exists";
     String WARD_IS_NOT_EXISTS = " ward is not exists";
 
+    String NAME_IS_EXISTS = "name is exists";
+
     // locations
     String PROVINCE_IS_FAKE = "province is fake";
     String DISTRICT_IS_FAKE = "district is fake";
@@ -37,7 +39,6 @@ public interface StringRp {
     String USERNAME_NOT_VALID = "username is not valid";
     String EMAIL_NOT_VALID = "email is not valid";
     String PASSWORD_NOT_VALID = "password is not valid";
-
-    String PROVINCE_IS_FAKE = "province is fake";
-    String DISTRICT_IS_FAKE = "distric is fake";
+//    building category
+    String BUILDING_CATEGORY_IS_FAKE = "building category is fake";
 }
