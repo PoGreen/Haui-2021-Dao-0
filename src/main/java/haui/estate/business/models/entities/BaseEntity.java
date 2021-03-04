@@ -29,7 +29,7 @@ public class BaseEntity {
     private String modifiedBy;
 
     @Column
-    private int status;
+    private Integer status;
 
     @PrePersist()
     public void onCreate() {
@@ -46,6 +46,10 @@ public class BaseEntity {
 
     public String getId() {
         return id;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
     public void setId(String id) {
