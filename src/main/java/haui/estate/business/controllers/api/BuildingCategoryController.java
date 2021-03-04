@@ -16,10 +16,10 @@ public class BuildingCategoryController {
     @Autowired
     private IBuildingCategoryService iBuildingCategoryService;
 
-//    @GetMapping(value = "/building-categories")
-//    public ResponseEntity<SystemResponse<Object>> getAllBuildingCategory(){
-//        return iBuildingCategoryService.getAll();
-//    }
+    @GetMapping(value = "/building-categories/pages")
+    public String getAllBuildingCategoryPage(){
+        return "building-category";
+    }
 
     @GetMapping(value = "/building-categories")
     public ResponseEntity<SystemResponse<Object>> getBuildingCategoryStatus(@RequestParam(value = "status")String status){
