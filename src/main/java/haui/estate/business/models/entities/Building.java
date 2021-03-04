@@ -13,31 +13,31 @@ public class Building extends BaseEntity{
     private String description;
 
     @Column(name = "car_pard")
-    private int carPark;
+    private Integer carPark;
 
     @Column(name = "moto_park")
-    private int motoPark;
+    private Integer motoPark;
 
     @Column(name = "floor_area")
-    private int floorArea;
+    private Integer floorArea;
 
     @Column(name = "home_frontage")
-    private int homeFrontage;
+    private Integer homeFrontage;
 
     @Column(name = "number_floor")
-    private int numberFloor;
+    private Integer numberFloor;
 
     @Column(name = "bedroom")
-    private int bedroom;
+    private Integer bedroom;
 
     @Column(name = "function_room")
-    private int functionRoom;
+    private Integer functionRoom;
 
     @Column(name = "altar_room")
-    private int altarRoom;
+    private Integer altarRoom;
 
     @Column(name = "campus_area")
-    private int campusArea;
+    private Integer campusArea;
 
     @Column(name = "direction")
     private String direction;
@@ -46,19 +46,19 @@ public class Building extends BaseEntity{
     private String map;
 
     @Column(name = "electricity_price")
-    private int electricityPrice;
+    private Integer electricityPrice;
 
     @Column(name = "frequence")
-    private int frequence;
+    private Integer frequence;
 
     @Column(name = "water_price")
-    private int waterPrice;
+    private Integer waterPrice;
 
     @Column(name = "service_price")
-    private int servicePrice;
+    private Integer servicePrice;
 
     @Column(name = "home_depsist")
-    private int homeDeposit;
+    private Integer homeDeposit;
 
     @Column(name = "address")
     private String address;
@@ -98,75 +98,75 @@ public class Building extends BaseEntity{
         this.description = description;
     }
 
-    public int getCarPark() {
+    public Integer getCarPark() {
         return carPark;
     }
 
-    public void setCarPark(int carPark) {
+    public void setCarPark(Integer carPark) {
         this.carPark = carPark;
     }
 
-    public int getMotoPark() {
+    public Integer getMotoPark() {
         return motoPark;
     }
 
-    public void setMotoPark(int motoPark) {
+    public void setMotoPark(Integer motoPark) {
         this.motoPark = motoPark;
     }
 
-    public int getFloorArea() {
+    public Integer getFloorArea() {
         return floorArea;
     }
 
-    public void setFloorArea(int floorArea) {
+    public void setFloorArea(Integer floorArea) {
         this.floorArea = floorArea;
     }
 
-    public int getHomeFrontage() {
+    public Integer getHomeFrontage() {
         return homeFrontage;
     }
 
-    public void setHomeFrontage(int homeFrontage) {
+    public void setHomeFrontage(Integer homeFrontage) {
         this.homeFrontage = homeFrontage;
     }
 
-    public int getNumberFloor() {
+    public Integer getNumberFloor() {
         return numberFloor;
     }
 
-    public void setNumberFloor(int numberFloor) {
+    public void setNumberFloor(Integer numberFloor) {
         this.numberFloor = numberFloor;
     }
 
-    public int getBedroom() {
+    public Integer getBedroom() {
         return bedroom;
     }
 
-    public void setBedroom(int bedroom) {
+    public void setBedroom(Integer bedroom) {
         this.bedroom = bedroom;
     }
 
-    public int getFunctionRoom() {
+    public Integer getFunctionRoom() {
         return functionRoom;
     }
 
-    public void setFunctionRoom(int functionRoom) {
+    public void setFunctionRoom(Integer functionRoom) {
         this.functionRoom = functionRoom;
     }
 
-    public int getAltarRoom() {
+    public Integer getAltarRoom() {
         return altarRoom;
     }
 
-    public void setAltarRoom(int altarRoom) {
+    public void setAltarRoom(Integer altarRoom) {
         this.altarRoom = altarRoom;
     }
 
-    public int getCampusArea() {
+    public Integer getCampusArea() {
         return campusArea;
     }
 
-    public void setCampusArea(int campusArea) {
+    public void setCampusArea(Integer campusArea) {
         this.campusArea = campusArea;
     }
 
@@ -186,35 +186,43 @@ public class Building extends BaseEntity{
         this.map = map;
     }
 
-    public int getElectricityPrice() {
+    public Integer getElectricityPrice() {
         return electricityPrice;
     }
 
-    public void setElectricityPrice(int electricityPrice) {
+    public void setElectricityPrice(Integer electricityPrice) {
         this.electricityPrice = electricityPrice;
     }
 
-    public int getWaterPrice() {
+    public Integer getFrequence() {
+        return frequence;
+    }
+
+    public void setFrequence(Integer frequence) {
+        this.frequence = frequence;
+    }
+
+    public Integer getWaterPrice() {
         return waterPrice;
     }
 
-    public void setWaterPrice(int waterPrice) {
+    public void setWaterPrice(Integer waterPrice) {
         this.waterPrice = waterPrice;
     }
 
-    public int getServicePrice() {
+    public Integer getServicePrice() {
         return servicePrice;
     }
 
-    public void setServicePrice(int servicePrice) {
+    public void setServicePrice(Integer servicePrice) {
         this.servicePrice = servicePrice;
     }
 
-    public int getHomeDeposit() {
+    public Integer getHomeDeposit() {
         return homeDeposit;
     }
 
-    public void setHomeDeposit(int homeDeposit) {
+    public void setHomeDeposit(Integer homeDeposit) {
         this.homeDeposit = homeDeposit;
     }
 
@@ -264,13 +272,5 @@ public class Building extends BaseEntity{
 
     public void setImages(List<Image> images) {
         this.images = images;
-    }
-
-    public int getFrequence() {
-        return frequence;
-    }
-
-    public void setFrequence(int frequence) {
-        this.frequence = frequence;
     }
 }

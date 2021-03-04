@@ -41,4 +41,10 @@ public interface StringRp {
     String PASSWORD_NOT_VALID = "password is not valid";
 //    building category
     String BUILDING_CATEGORY_IS_FAKE = "building category is fake";
+//    image
+String IMAGE_IS_NOT_EXIST = "image is not exists";
+    String USER_HAS_NOT_IMAGE = "user has not image";
+    String FILE_IS_NOT_IMAGE = "file ís not image";
+    String FILE_IS_NOT_EXISTS = "file ís not exists";
+
 }
